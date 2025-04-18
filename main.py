@@ -17,6 +17,11 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
+        
+        # Input
+        player.update(dt)
+
+        # Rendering
         screen.fill((0,0,0))
 
         player.draw(screen)
